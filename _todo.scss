@@ -1,0 +1,17 @@
+.todoheader{
+    display: flex;
+    gap:20px;
+    width: 90%;
+    justify-content: end;
+    align-items: center;
+    font-weight: 500;
+    padding:8px 0px;
+}
+.logout{
+    display: block;
+    text-decoration: none;
+    color:$dark; 
+    &:hover{
+        color:$light;
+    }
+}

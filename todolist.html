@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>待辦事項</title>
+  <meta property="og:description" content="TODOlist串接API" />
+  <meta property="og:image" content="https://images.plurk.com/5PtnOW3zEDCBXmbUuR6PoP.jpg ">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="./favicon_todo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600,700">
+  <!-- 透過 CDN 引入 axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+    body {
+      font-family: "Noto Sans TC", "Baloo Tamma 2", sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="todoheader">
+    <div class="loginnickname">
+      <div>艾連的待辦</div>
+    </div>
+    <div>
+      <a href="#" class="logout">登出</a>
+    </div>
+  </div>
+  <div class="container">
+    <h1><a href="./index.html" style="display: block; text-decoration: none; color:#333">TODO LIST</a></h1>
+    <div class="card input">
+      <input type="text" placeholder="請輸入待辦事項" />
+      <a href="#" class="btn_add">+</a>
+    </div>
+    <div class="card card_list">
+      <ul class="tab">
+        <li class="active">全部</li>
+        <li>待完成</li>
+        <li>已完成</li>
+      </ul>
+      <div class="cart_content">
+        <ul class="list">
+          <!--<li>
+            <label class="checkbox" for="">
+              <input type="checkbox" />
+              <span>把冰箱發霉的檸檬拿去丟</span>
+            </label>
+            <a href="#" class="delete"></a>
+          </li>
+          <li>
+            <label class="checkbox" for="">
+              <input type="checkbox" />
+              <span>遛狗</span>
+            </label>
+            <a href="#" class="delete"></a>
+          </li>
+          <li>
+            <label class="checkbox" for="">
+              <input type="checkbox" />
+              <span>打掃房間角落</span>
+            </label>
+            <a href="#" class="delete"></a>
+          </li>
+          <li>
+            <label class="checkbox" for="">
+              <input type="checkbox" />
+              <span>書拿去回收</span>
+            </label>
+            <a href="#" class="delete"></a>
+          </li>-->
+        </ul>
+        <div class="list_footer">
+          <p class="completeitem">0 個待完成項目</p>
+          <a href="#" class="deleteall">清除已完成項目</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./todo.js"></script>
+</body>
+
+</html>

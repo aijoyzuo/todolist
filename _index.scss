@@ -1,0 +1,70 @@
+
+.display-flex{
+    max-width: 960px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content:space-around;
+}
+.logo{
+    width: 320px;
+    height: 600px;
+    background-image: url("https://images.plurk.com/24VBbdby0UVv56MOVJx8Fv.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    @media (max-width: 720px) {
+        display:none;
+      }
+}
+.todolistbox{
+    max-width:600px;
+    margin: 3rem auto 1.5rem auto;
+    min-width: 375px;
+    @media (max-width: 720px) {
+      margin-top: 1.5rem;
+    }
+}
+.btn_login{
+    padding: 8px 40px;
+    border-radius: 10px;
+    background: $dark;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    &:hover {
+        cursor: pointer;
+        background: $default;
+        border-color: $default;       
+    }
+    
+}
+.placeholder {
+    background-color: white !important;  /* 統一背景顏色 */
+    border: 1px solid #ccc !important;  /* 統一邊框顏色 */
+    padding: 8px;
+    width: 100% !important;  
+    font-size: 16px;
+    color: #333 !important;  /* 確保輸入文字顏色一致 */
+    box-shadow: none !important;  /* 移除 email 欄位可能的陰影 */
+}
+.signinDiv{
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+
+#emailHelp, #nicknameHelp, #passwordHelp, #passwordCheckHelp{
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.signup {
+    display: block;
+    text-decoration: none;
+    color:$dark; 
+    &:hover{
+        color:$default;
+    }
+}

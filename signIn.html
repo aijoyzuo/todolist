@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登入帳號</title>
+  <meta property="og:description" content="TODOlist串接API" />
+  <meta property="og:image" content="https://images.plurk.com/5PtnOW3zEDCBXmbUuR6PoP.jpg ">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="./favicon_todo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600,700">
+  <!-- 透過 CDN 引入 axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <style>
+    body {
+      font-family: "Noto Sans TC", "Baloo Tamma 2", sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+ 
+    <div class="display-flex">
+      <div>
+        <div class="logo1"></div>
+      </div>
+      <div class="todolistbox">
+        <h1>TODO LIST</h1>
+        <div style="max-width: 450px;margin: 0 auto;">
+          <h2>最實用的線上待辦服務</h2>
+          <div class="signinDiv">
+            <label for="email" class=""style="display: block">Email</label>
+            <input type="email" id="email" placeholder="請輸入email" class="placeholder" aria-describedby="emailHelp">
+            <div id="emailHelp">此欄位不可為空</div>
+          </div>
+          <div class="signinDiv">
+            <label for="password" class=""style="display: block">密碼</label>
+            <input type="text" id="password" placeholder="請輸入密碼" class="placeholder" aria-describedby="passwordHelp">
+            <div id="passwordHelp">此欄位不可為空</div>
+          </div>
+          <div style="text-align: center;">
+            <button type="submit" class="btn_login">登入</button>
+            <a href="./index.html" class="signup">註冊帳號</a>
+          </div>
+        </div>
+      </div>
+  </div>
+ 
+
+
+  <script src="./signIn.js"></script>
+</body>
+
+</html>
