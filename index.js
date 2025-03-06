@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("token", token);
 
             // 跳轉到 index 頁面
-            window.location.href = "index.html";
+            window.location.href = "signIn.html";
 
         } catch (error) {
             // 註冊失敗
