@@ -62,14 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // API 串接
-       
+
         try {
             const res = await axios.post("https://todoo.5xcamp.us/users", {
                 user: { email, nickname, password }
             }, {
                 headers: {
-                "Content-Type": "application/json"
-            }});
+                    "Content-Type": "application/json"
+                }
+            });
 
             // 註冊成功
             console.log("註冊成功", res.data);
@@ -78,6 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // 取得 Token，並儲存到 localStorage
             const token = res.headers.authorization;
             localStorage.setItem("token", token);
+
+            // 存入 `nickname`
+            localStorage.setItem("nickname", nickname); 
+            console.log("暱稱", nickname);
+
 
             // 跳轉到 index 頁面
             window.location.href = "signIn.html";
