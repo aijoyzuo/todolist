@@ -45,8 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("登入成功！");
 
             // 取得 Token，並儲存到 localStorage
-            const token = res.headers.authorization;
+            let token = res.headers.authorization;
+            if (token.startsWith("bearer ")) {
+                token = token.split(" ")[1];
+            }
             localStorage.setItem("token", token);
+            console.log("token", token)
+
+            // 從 `localStorage` 讀取 `nickname`
+            const nickname = localStorage.getItem("nickname") || "使用者";
+            console.log("使用者暱稱:", nickname);
 
             // 跳轉到 To-Do List 頁面
             window.location.href = "todolist.html";
